@@ -1,0 +1,12 @@
+io\confluent\connector\verification\repository\TestScriptsRepository.class
+io\confluent\connector\verification\exception\GlobalExceptionHandler.class
+io\confluent\connector\verification\controller\TestScriptsController.class
+io\confluent\connector\verification\exception\ErrorDetails.class
+io\confluent\connector\verification\repository\TestResultsRepository.class
+io\confluent\connector\verification\Application.class
+io\confluent\connector\verification\exception\ResourceNotFoundException.class
+io\confluent\connector\verification\model\TestScripts.class
+io\confluent\connector\verification\repository\ReleaseInfoRepository.class
+io\confluent\connector\verification\model\TestResults.class
+io\confluent\connector\verification\controller\ReleaseInfoController.class
+io\confluent\connector\verification\model\ReleaseInfo.class

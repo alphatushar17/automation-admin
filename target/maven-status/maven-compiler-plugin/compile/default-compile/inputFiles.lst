@@ -1,0 +1,12 @@
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\controller\ReleaseInfoController.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\exception\ErrorDetails.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\exception\GlobalExceptionHandler.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\model\TestResults.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\model\TestScripts.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\exception\ResourceNotFoundException.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\controller\TestScriptsController.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\repository\TestScriptsRepository.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\repository\TestResultsRepository.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\Application.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\repository\ReleaseInfoRepository.java
+C:\Projects\Confluent-Verification-Automation\automation-admin\src\main\java\io\confluent\connector\verification\model\ReleaseInfo.java

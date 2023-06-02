@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "d2e659c3-387f-4e4d-b8a6-a9aaddb6418c",
+		"name": "automation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "updatePartnersReleaseInfo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"partnerId\": \"ScyllaDB-kafka-connect-scylladb\",\r\n    \"partnerName\": \"Scylla2\",\r\n    \"gitReleaseURL\": \"https://github.com/scylladb/kafka-connect-scylladb\",\r\n    \"currentReleaseVersion\": null,\r\n    \"lastReleaseVersion\": null,\r\n    \"releaseSubmittedDate\": \"2022-10-03T00:00:00.000+0000\",\r\n    \"lastRunDate\": \"2022-10-03T00:00:00.000+0000\",\r\n    \"finalJarName\": \"components/packages/ScyllaDB-kafka-connect-scylladb\",\r\n    \"buildPath\": \"kafka-connect-scylladb\",\r\n    \"buildCommand\": \"mvn clean package -DskipTests=true\",\r\n    \"skipVerification\": false,\r\n    \"repoTagName\": \"svn_url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/automation/v1/partners/ScyllaDB-kafka-connect-scylladb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automation",
+						"v1",
+						"partners",
+						"ScyllaDB-kafka-connect-scylladb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTestcase",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"testId\": \"test3\",\r\n    \"partnerId\": \"ScyllaDB-kafka-connect-scylladb\",\r\n    \"testDescription\": \"updated description\",\r\n    \"requestType\": \"GET\",\r\n    \"url\": \"localhost\",\r\n    \"inputPayloadFilepath\": \"asdk\",\r\n    \"successResponseCode\": 200,\r\n    \"successResponseValidationString\": \"asdk\",\r\n    \"delay\": 1000,\r\n    \"runStatus\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/automation/v1/testScripts/ScyllaDB-kafka-connect-scylladb/test3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automation",
+						"v1",
+						"testScripts",
+						"ScyllaDB-kafka-connect-scylladb",
+						"test3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePartnersReleaseInfo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automation/v1/partners/ScyllaDB-kafka-connect-scylladb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automation",
+						"v1",
+						"partners",
+						"ScyllaDB-kafka-connect-scylladb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllTestcases",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automation/v1/testScripts/ScyllaDB-kafka-connect-scylladb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automation",
+						"v1",
+						"testScripts",
+						"ScyllaDB-kafka-connect-scylladb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTestcaseById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automation/v1/testScripts/ScyllaDB-kafka-connect-scylladb/test1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automation",
+						"v1",
+						"testScripts",
+						"ScyllaDB-kafka-connect-scylladb",
+						"test1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertPartnersReleaseInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"partnerId\": \"ScyllaDB-kafka-connect-scylladb\",\r\n    \"partnerName\": \"Scylla\",\r\n    \"gitReleaseURL\": \"https://github.com/scylladb/kafka-connect-scylladb\",\r\n    \"currentReleaseVersion\": null,\r\n    \"lastReleaseVersion\": null,\r\n    \"releaseSubmittedDate\": \"2022-10-03T00:00:00.000+0000\",\r\n    \"lastRunDate\": \"2022-10-03T00:00:00.000+0000\",\r\n    \"finalJarName\": \"components/packages/ScyllaDB-kafka-connect-scylladb-1.0.0-SNAPSHOT-preview.zip\",\r\n    \"buildPath\": \"kafka-connect-scylladb\",\r\n    \"buildCommand\": \"mvn clean package -DskipTests=true\",\r\n    \"skipVerification\": false,\r\n    \"repoTagName\": \"svn_url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/automation/v1/partners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"automation",
+						"v1",
+						"partners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertTestcase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"testId\": \"1\",\r\n    \"partnerId\": \"ScyllaDB-kafka-connect-scylladb\",\r\n    \"testDescription\": \"Verify connect worker\",\r\n    \"requestType\": \"GET\",\r\n    \"url\": \"http://localhost:8083\",\r\n    \"inputPayloadFilepath\": \"\",\r\n    \"successResponseCode\": 200,\r\n    \"successResponseValidationString\": \"is(0)\",\r\n    \"delay\": 10000,\r\n    \"runStatus\": true\r\n},\r\n{\r\n    \"testId\": \"2\",\r\n    \"partnerId\": \"ScyllaDB-kafka-connect-scylladb\",\r\n    \"testDescription\": \"Create a new simple source connector\",\r\n    \"requestType\": \"POST\",\r\n    \"url\": \"http://localhost:8083/connectors\",\r\n    \"inputPayloadFilepath\": \"C:/Users/Infoview/Documents/automation/source-connector-testcases/scylla-source-config.json\",\r\n    \"successResponseCode\": 201,\r\n    \"successResponseValidationString\": \"hasitem()\",\r\n    \"delay\": 10000,\r\n    \"runStatus\": true\r\n},\r\n{\r\n    \"testId\": \"3\",\r\n    \"partnerId\": \"ScyllaDB-kafka-connect-scylladb\",\r\n    \"testDescription\": \"Get connector details\",\r\n    \"requestType\": \"GET\",\r\n    \"url\": \"http://localhost:8083/connectors/Scylla\",\r\n    \"inputPayloadFilepath\": \"\",\r\n    \"successResponseCode\": 200,\r\n    \"successResponseValidationString\": \"is(1)\",\r\n    \"delay\": 10000,\r\n    \"runStatus\": true\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/automation/v1/testScripts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"automation",
+						"v1",
+						"testScripts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPartnersReleaseInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automation/v1/partners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automation",
+						"v1",
+						"partners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTestcasesByPartnerId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automation/v1/testScripts/ScyllaDB-kafka-connect-scylladb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automation",
+						"v1",
+						"testScripts",
+						"ScyllaDB-kafka-connect-scylladb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTestcasesByPartnerIdAndTestId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automation/v1/testScripts/ScyllaDB-kafka-connect-scylladb/test2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automation",
+						"v1",
+						"testScripts",
+						"ScyllaDB-kafka-connect-scylladb",
+						"test2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
